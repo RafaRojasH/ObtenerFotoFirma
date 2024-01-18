@@ -4,3 +4,4 @@ opencv_contrib_python==4.6.0.66
 opencv_python==4.8.0.76
 Pillow==9.4.0
 streamlit==1.29.0
+PyMuPDF==1.16
