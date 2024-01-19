@@ -1,6 +1,7 @@
-PyMuPDF==1.16
 numpy==1.24.3
 opencv_contrib_python==4.6.0.66
 opencv_python==4.8.0.76
 Pillow==9.4.0
 streamlit==1.29.0
+spacy==3.1.4
+https://huggingface.co/kormilitzin/en_core_med7_lg/resolve/main/en_core_med7_lg-any-py3-none-any.whl
