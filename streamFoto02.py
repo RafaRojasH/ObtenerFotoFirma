@@ -17,7 +17,7 @@ face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 
 def pdf_to_images(pdf_file, resolution=600):
-    doc = fitz.open(pdf_file, stream=mem_area)
+    doc = fitz.open(stream=pdf_file.read(), filetype="pdf")
     images = []
     for page_number in range(doc.page_count):
         page = doc.load_page(page_number)
