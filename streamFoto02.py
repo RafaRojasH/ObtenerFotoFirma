@@ -6,8 +6,8 @@ import math
 import cv2
 from io import BytesIO
 
-
-face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+#face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 #if face_cascade.empty(): raise Exception("¿Está seguro que es la ruta correcta?")
 
 #@st.experimental_singleton
