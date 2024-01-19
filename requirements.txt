@@ -6,4 +6,3 @@ streamlit==1.29.0
 spacy==3.4.2
 https://huggingface.co/kormilitzin/en_core_med7_lg/resolve/main/en_core_med7_lg-any-py3-none-any.whl
 PyMuPDF
-libgl1-mesa-glx
