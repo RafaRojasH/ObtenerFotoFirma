@@ -10,6 +10,10 @@ from io import BytesIO
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 if face_cascade.empty(): raise Exception("¿Está seguro que es la ruta correcta?")
 
+@st.experimental_singleton
+def load_model():
+    nlp = spacy.load("en_core_med7_lg")
+    return nlp
 
 
 def pdf_to_images(pdf_file, resolution=600):
@@ -238,7 +242,7 @@ st.title("Segmentación de foto y firma")
 file = st.file_uploader("Selecciona un archivo PDF", type="pdf")
 print(file.name)
 
-
+nlp = load_model()
 valorNegro = 20
 
 # Verificar si se ha subido un archivo
