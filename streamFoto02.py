@@ -240,7 +240,7 @@ def eliminar_ruido_mediana(img):
 # Configuración de la página
 st.title("Segmentación de foto y firma")
 file = st.file_uploader("Selecciona un archivo PDF", type="pdf")
-print(file.name)
+#print(file.name)
 
 #nlp = load_model()
 valorNegro = 20
