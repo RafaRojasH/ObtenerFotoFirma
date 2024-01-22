@@ -246,7 +246,7 @@ for i in range(3):
     #col1.image(eval(f'img{i+1}'), caption=f'Imagen {i+1}', width=200, use_container_width=True)
     
     # Muestra el radio button en la segunda columna
-    opcion_seleccionada = col2.radio(f'Selecciona una opción para la Imagen {i+1}', etiquetas, key=i)
+    opcion_seleccionada = col2.radio(f'Selecciona una opción para la Imagen {i+1}', etiquetas[i], key=i)
     
     # Puedes hacer algo con la opción seleccionada, por ejemplo, imprimirlo
     st.write(f'Has seleccionado: {opcion_seleccionada}')
