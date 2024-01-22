@@ -246,6 +246,13 @@ with col2:
 with col3:
     st.image(img3)
 
+st.markdown("""
+    <style>
+    [role=radiogroup]{
+        gap: 3rem;
+    }
+    </style>
+    """,unsafe_allow_html=True)
 tipo = st.radio("", etiquetas, horizontal=True)
 
 file = st.file_uploader("Selecciona un archivo PDF", type="pdf")
