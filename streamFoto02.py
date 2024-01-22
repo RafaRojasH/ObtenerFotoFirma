@@ -7,9 +7,9 @@ import cv2
 from io import BytesIO
 
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
-img1 = "imagenes/imagen01.png"
-img2 = "imagenes/imagen02.png"
-img3 = "imagenes/imagen03.png"
+img1 = "imagenes/Imagen01.png"
+img2 = "imagenes/Imagen02.png"
+img3 = "imagenes/Imagen03.png"
 etiquetas = ["Opción 1", "Opción 2", "Opción 3"]
 
 def pdf_to_images(pdf_file, resolution=600):
