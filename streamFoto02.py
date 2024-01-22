@@ -238,18 +238,13 @@ etiquetas = ["Opción 1", "Opción 2", "Opción 3"]
 # Configuración de la página
 st.title("Segmentación de foto y firma")
 
-# Muestra las imágenes y radio buttons de manera horizontal
-for i in range(3):
-    col1, col2 = st.columns([2, 1])  # Divide el espacio en 2:1
-    
-    # Muestra la imagen en la primera columna
-    #col1.image(eval(f'img{i+1}'), caption=f'Imagen {i+1}', width=200, use_container_width=True)
-    
-    # Muestra el radio button en la segunda columna
-    opcion_seleccionada = col2.radio(f'Selecciona una opción para la Imagen {i+1}', etiquetas[i], key=i)
-    
-    # Puedes hacer algo con la opción seleccionada, por ejemplo, imprimirlo
-    st.write(f'Has seleccionado: {opcion_seleccionada}')
+col1, col2, col3 = st.columns(3)
+with col1:
+    st.image(img1)
+with col2:
+    st.image(img2)
+with col3:
+    st.image(img3)
 
 
 
