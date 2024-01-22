@@ -251,14 +251,7 @@ for i in range(3):
     # Puedes hacer algo con la opción seleccionada, por ejemplo, imprimirlo
     st.write(f'Has seleccionado: {opcion_seleccionada}')
 
-tipo = st.radio(
-    "Tipo de formato",
-    ["1", "2", "3","4"],
-    index=None,
-    horizontal=True
-)
 
-st.write("Tipo seleccionado", tipo)
 
 file = st.file_uploader("Selecciona un archivo PDF", type="pdf")
 valorNegro = 20
