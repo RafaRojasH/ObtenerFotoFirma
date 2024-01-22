@@ -249,7 +249,7 @@ with col3:
 st.markdown("""
     <style>
     [role=radiogroup]{
-        gap: 3rem;
+        gap: 10rem;
     }
     </style>
     """,unsafe_allow_html=True)
