@@ -246,7 +246,7 @@ with col2:
 with col3:
     st.image(img3)
 
-tipo = st.radio("", etiquetas)
+tipo = st.radio("", etiquetas, horizontal=True)
 
 file = st.file_uploader("Selecciona un archivo PDF", type="pdf")
 valorNegro = 20
