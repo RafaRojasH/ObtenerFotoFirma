@@ -7,6 +7,10 @@ import cv2
 from io import BytesIO
 
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+img1 = "imagenes/imagen01.png"
+img2 = "imagenes/imagen02.png"
+img3 = "imagenes/imagen03.png"
+etiquetas = ["Opción 1", "Opción 2", "Opción 3"]
 
 def pdf_to_images(pdf_file, resolution=600):
     doc = fitz.open(stream=pdf_file.read(), filetype="pdf")
@@ -231,6 +235,19 @@ def eliminar_ruido_mediana(img):
 
 # Configuración de la página
 st.title("Segmentación de foto y firma")
+
+# Muestra las imágenes y radio buttons de manera horizontal
+for i in range(3):
+    col1, col2 = st.beta_columns([2, 1])  # Divide el espacio en 2:1
+    
+    # Muestra la imagen en la primera columna
+    col1.image(eval(f'img{i+1}'), caption=f'Imagen {i+1}', width=200, use_container_width=True)
+    
+    # Muestra el radio button en la segunda columna
+    opcion_seleccionada = col2.radio(f'Selecciona una opción para la Imagen {i+1}', etiquetas, key=i)
+    
+    # Puedes hacer algo con la opción seleccionada, por ejemplo, imprimirlo
+    st.write(f'Has seleccionado: {opcion_seleccionada}')
 
 tipo = st.radio(
     "Tipo de formato",
