@@ -238,7 +238,7 @@ st.title("Segmentación de foto y firma")
 
 # Muestra las imágenes y radio buttons de manera horizontal
 for i in range(3):
-    col1, col2 = st.beta_columns([2, 1])  # Divide el espacio en 2:1
+    col1, col2 = st.columns([2, 1])  # Divide el espacio en 2:1
     
     # Muestra la imagen en la primera columna
     col1.image(eval(f'img{i+1}'), caption=f'Imagen {i+1}', width=200, use_container_width=True)
