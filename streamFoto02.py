@@ -230,9 +230,9 @@ def eliminar_ruido_mediana(img):
     return imagen_suavizada
 
 
-img1 = "imagenes/Imagen01.png"
-img2 = "imagenes/Imagen02.png"
-img3 = "imagenes/Imagen03.png"
+img1 = "imagenes/Imagen01.jpg"
+img2 = "imagenes/Imagen02.jpg"
+img3 = "imagenes/Imagen03.jpg"
 etiquetas = ["Opción 1", "Opción 2", "Opción 3"]
 
 # Configuración de la página
